@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1> What's the ante ?</h1>
+<button onclick="myFunction()">Find Out</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+const ante = ["Concede an argument", "Dishes", "Lamborghini", "lemonade", "Pick a dinner", "handle a beauraucracy", "Chocolate", "Roberto Gelato", "Pay for a dinner", "Concede choice of music", "Do the thing I've been nagging about", "Play with my hair", "Do the vacuuming", "$10 gift", "Cake", "Carrots", "Plan the next outing", "nothing", "Bragging rights", "Make tea", "Coffee", "A drink", "Run an errand", "Chores for a week", "Gardening", "Write my email","Pistachios",
+];
+
+const random = Math.floor(Math.random() * ante.length);
+const msg= (random, ante[random]);
+  document.getElementById("demo").innerHTML = msg;
+}
+</script>
+
+</body>
+</html>
